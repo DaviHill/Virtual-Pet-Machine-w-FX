@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="528.7999877929688" minWidth="10.0" prefWidth="288.6000122070312" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="423.1999877929687" minWidth="10.0" prefWidth="310.9999877929688" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="340.40001525878904" minHeight="10.0" prefHeight="340.40001525878904" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="193.20001831054688" minHeight="10.0" prefHeight="60.39998474121097" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ProgressBar fx:id="healthBar" prefWidth="200.0" progress="1.0" rotate="-90.0" snapToPixel="false" translateX="-60.0" translateY="-40.0" GridPane.columnIndex="1" />
+      <ProgressBar fx:id="thirstBar" prefWidth="200.0" progress="1.0" rotate="-90.0" snapToPixel="false" translateX="20.0" translateY="-40.0" GridPane.columnIndex="1" />
+      <ProgressBar fx:id="hungerBar" prefWidth="200.0" progress="1.0" rotate="-90.0" snapToPixel="false" translateX="100.0" translateY="-40.0" GridPane.columnIndex="1" />
+      <ProgressBar fx:id="affectionBar" prefWidth="200.0" progress="1.0" rotate="-90.0" snapToPixel="false" translateX="180.0" translateY="-40.0" GridPane.columnIndex="1" />
+      <ChoiceBox fx:id="healthChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" translateX="15.0" translateY="-60.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.valignment="BOTTOM" />
+      <ChoiceBox fx:id="affectionChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" translateX="255.0" translateY="-60.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+      <ChoiceBox fx:id="hungerChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" translateX="175.0" translateY="-60.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+      <ChoiceBox fx:id="thirstChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" translateX="95.0" translateY="-60.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+      <TextArea fx:id="descriptionTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Text Goes here" GridPane.rowIndex="1" />
+      <Label text="Health" translateX="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Thirst" translateX="105.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Hunger" translateX="180.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Affection" translateX="260.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
